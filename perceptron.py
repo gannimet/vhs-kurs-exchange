@@ -1,1 +1,22 @@
-
+        const pnlBookPositions = this.domainService.buildMarketPositionsForAllBooks({
+            businessUnits,
+            mrmPowerQueryResults,
+            optPowerQueryResults,
+            optTimePeriods: timePeriods.allOpt,
+            mrmTimePeriods: timePeriods.allMrm,
+            years: timePeriods.years,
+            hoursInOptInterval,
+            pfc,
+            peakPrices,
+            offPeakPrices,
+            coal,
+            certificates,
+            daysInOptInterval,
+            optGasQueryResults,
+            mrmGasQueryResults,
+            gasNativePfc,
+            gasTtfPfc,
+            gasNativePrices,
+            gasTtfPrices,
+            calculatedAt: this.clock.now().toISOString(),
+        });
